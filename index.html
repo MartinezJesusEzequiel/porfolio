@@ -8,170 +8,112 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header id="inicio" style="position:relative;">
-        <button id="darkModeToggle" class="btn" style="position:absolute;top:20px;right:20px;z-index:9999;">🌙</button>
-        <!-- Botón multilenguaje -->
-        <button id="langToggle" class="btn" style="position:absolute;top:20px;left:20px;z-index:9999;">EN</button>
-
-        <div class="hero">
-            <img src="Imagen de WhatsApp 2025-04-16 a las 10.39.10_3ef6e64b.jpg" alt="Foto de Ezequiel Martinez" class="foto-perfil">
-            <h1 id="titulo-principal">Hola, soy Ezequiel Martinez</h1>
-            <p id="subtitulo">Me apasiona crear software que resuelva problemas reales de forma simple y eficaz..</p>
-            <a href="#proyectos" class="btn" id="ver-proyectos-btn">Ver Proyectos</a>
-        </div>
-        <nav>
+    <nav>
+        <div class="container nav-flex">
+            <div class="logo">EM</div>
             <ul>
-                <li><a href="#inicio" id="nav-inicio">Inicio</a></li>
-                <li><a href="#sobre-mi" id="nav-sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos" id="nav-proyectos">Proyectos</a></li>
-                <li><a href="#certificados" id="nav-certificados">Certificados</a></li>
-                <li><a href="#contacto" id="nav-contacto">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero container">
+        <img src="Imagen de WhatsApp 2025-04-16 a las 10.39.10_3ef6e64b.jpg" alt="Ezequiel Martinez" class="foto-perfil">
+        <h1 class="titulo-principal">Hola, soy <span>Ezequiel Martinez</span></h1>
+        <p class="subtitulo">Me apasiona crear software que resuelva problemas reales de forma simple y eficaz.</p>
+        <a href="#proyectos" class="btn-principal">Ver Proyectos</a>
     </header>
 
-    <!-- Sobre mí -->
-    <main>
-        <section id="sobre-mi">
-            <h2 id="titulo-sobre-mi">Sobre mí</h2>
-            <p id="texto-sobre-mi">
+    <main class="container">
+        <section id="sobre-mi" class="section-card">
+            <h2 class="titulo-seccion">Sobre mí</h2>
+            <p class="texto-seccion">
                 Soy una persona curiosa y creativa, siempre con ganas de aprender algo nuevo. Disfruto el proceso de pensar ideas y convertirlas en soluciones útiles para los demás.<br>
-                Me gusta enfrentar desafíos, trabajar de manera autodidacta y colaborar con otras personas para crecer juntos. Busco superarme día a día y aportar valor en cada proyecto en el que participo.
+                Me gusta enfrentar desafíos, trabajar de manera autodidacta y colaborar con otras personas para crecer juntos.
             </p>
         </section>
 
-        <!-- Habilidades -->
-        <section id="habilidades">
-            <h2 id="titulo-habilidades">Tecnologías de desarrollo</h2>
-            <div class="habilidades-container">
-                <div class="habilidad html">
-                    <i class="fas fa-code"></i>
-                    <h3>HTML</h3>
-                    <p>Experto en la creación de estructuras web semánticas.</p>
-                </div>
-                <div class="habilidad css">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS</h3>
-                    <p>Diseño responsivo y animaciones modernas.</p>
-                </div>
-                <div class="habilidad js">
-                    <i class="fab fa-js-square"></i>
-                    <h3>JavaScript</h3>
-                    <p>Desarrollo de funcionalidades dinámicas e interactivas.</p>
-                </div>
-                <div class="habilidad react">
-                    <i class="fab fa-react"></i>
-                    <h3>React</h3>
-                    <p>Creación de interfaces de usuario eficientes.</p>
-                </div>
-                <div class="habilidad python">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                    <p>Lenguaje versátil para desarrollo web, análisis de datos y más.</p>
-                </div>
-                <div class="habilidad pandas">
-                    <i class="fas fa-database"></i>
-                    <h3>Pandas</h3>
-                    <p>Biblioteca poderosa para análisis y manipulación de datos.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Proyectos -->
         <section id="proyectos">
-    <h2 id="titulo-proyectos">Proyectos</h2>
-    <div class="proyectos-container">
-        <div class="proyecto">
-            <h3>Control de Insumos Agrícolas</h3>
-            <p>
-                Desarrollo de la arquitectura del software e implementación completa del sistema, utilizando Flutter para la interfaz y Python con Flet para el backend, enfocado en el control de entrada y salida de insumos agrícolas y el seguimiento de siembra.
-            </p>
-            <div style="margin-top:12px;">
-                <i class="fab fa-python" title="Python" style="font-size:1.7rem;color:#3776AB;margin-right:8px;"></i>
-                <i class="fab fa-flutter" title="Flutter" style="font-size:1.7rem;color:#02569B;margin-right:8px;"></i>
-                <img src="https://flet.dev/images/logo.svg" alt="Flet" title="Flet" style="height:1.7rem;vertical-align:middle;margin-right:8px;">
+            <h2 class="titulo-seccion">Proyectos</h2>
+            <div class="grid">
+                <div class="card proyecto">
+                    <h3>Sistema Gestion Biblioteca</h3>
+                    <p>Lógica de programación y resolución de problemas complejos aplicados.</p>
+                    <div class="tech-icons">
+                        <i class="fab fa-python" style="color:#3b82f6;"></i>
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <a href="https://github.com/Tabacoman/TP_Integrador_Programacion" target="_blank" class="btn-github">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+
+                <div class="card proyecto">
+                    <h3>Control de Insumos Agrícolas</h3>
+                    <p>Arquitectura e implementación completa utilizando Flutter y Python (Flet).</p>
+                    <div class="tech-icons">
+                        <i class="fab fa-flutter" style="color:#3b82f6;"></i>
+                        <i class="fab fa-python" style="color:#3b82f6;"></i>
+                    </div>
+                </div>
+
+                <div class="card proyecto">
+                    <h3>Sitio Web – Café Únilo</h3>
+                    <p>Desarrollo responsive para marca de café con Firebase y diseño optimizado.</p>
+                    <div class="tech-icons">
+                        <i class="fab fa-html5" style="color:#E34F26;"></i>
+                        <i class="fab fa-js" style="color:#F7DF1E;"></i>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="proyecto">
-            <h3>Sitio Web – Café Únilo</h3>
-            <p>
-                Desarrollo completo de sitio web responsive para una marca de café de especialidad, utilizando HTML, CSS, JavaScript y Firebase. Incluye frontend orientado a producto, formulario de contacto funcional con base de datos en la nube y diseño optimizado para dispositivos móviles.
-            </p>
-            <div style="margin-top:12px;">
-                <i class="fab fa-html5" title="HTML5" style="font-size:1.7rem;color:#E34F26;margin-right:8px;"></i>
-                <i class="fab fa-css3-alt" title="CSS3" style="font-size:1.7rem;color:#1572B6;margin-right:8px;"></i>
-                <i class="fab fa-js" title="JavaScript" style="font-size:1.7rem;color:#F7DF1E;margin-right:8px;"></i>
-                <img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png" alt="Firebase" title="Firebase" style="height:1.7rem;vertical-align:middle;margin-right:8px;">
+        <section id="educacion">
+            <h2 class="titulo-seccion">Educación y Certificados</h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-graduation-cap icon-main"></i>
+                    <h3>ITEC "El Molino"</h3>
+                    <p>Tecnicatura en software informático</p>
+                    <span class="fecha">2024 - 2026</span>
+                </div>
+                <div class="card">
+                    <i class="fas fa-certificate icon-main" style="color: #f59e0b;"></i>
+                    <h3>Desarrollo Web</h3>
+                    <p>CEIT - Certificado Profesional</p>
+                    <a href="Certificado curso web.pdf" download class="btn-link">Descargar PDF</a>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-        <!-- Certificados y logros -->
-<!-- Educación -->
-<section id="educacion">
-    <h2 id="titulo-educacion">Educación</h2>
-    <div class="certificados-container">
-        <div class="certificado">
-            <i class="fas fa-graduation-cap"></i>
-            <h3>ITEC Instituto Tecnológico "El Molino"</h3>
-            <p>Tecnicatura en Tecnología/Técnico de software informático</p>
-            <span style="color:var(--azul-claro);font-weight:bold;">mar. 2024 - 2026</span>
-        </div>
-        <div class="certificado">
-            <i class="fas fa-laptop-code"></i>
-            <h3>CEIT "Centro de estudios informáticos y tecnológicos"</h3>
-            <p>Programación y Desarrollador Web</p>
-            <span style="color:var(--azul-claro);font-weight:bold;">feb. 2023</span>
-        </div>
-        <div class="certificado">
-            <i class="fab fa-python"></i>
-            <h3>Codedex</h3>
-            <p>Legend en Python</p>
-            <span style="color:var(--cian);font-weight:bold;">Reconocimiento especial</span>
-        </div>
-        <div class="certificado">
-            <i class="fas fa-file-pdf"></i>
-            <h3>Martinez Ezequiel.pdf</h3>
-            <a href="Certificado curso web.pdf" download class="btn" style="margin-top:10px;">Descargar PDF</a>
-        </div>
-    </div>
-</section>
-
-        <!-- Contacto -->
         <section id="contacto">
-            <h2 id="titulo-contacto">Contacto</h2>
-        <form id="formulario" action="https://formspree.io/f/tu_codigo" method="POST">
-            <input type="text" name="nombre" placeholder="Tu nombre" required />
-            <input type="email" name="email" placeholder="Tu correo" required />
-            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-            <button type="submit" class="btn-principal">Enviar</button>
-        </form>
+            <h2 class="titulo-seccion">Contacto</h2>
+            <div class="card contact-form-container">
+                <form id="formulario" action="https://formspree.io/f/tu-codigo" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required />
+                    <input type="email" name="email" placeholder="Tu correo" required />
+                    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit" class="btn-principal">Enviar mensaje</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <!-- Footer -->
-<!-- Footer -->
-<footer>
-    <a href="EZEQUIEL MARTINEZ.pdf" download class="btn" style="margin: 15px auto 10px auto; display: inline-block;">
-        <i class="fas fa-file-download"></i> Descargar CV
-    </a>
-    <p>© 2025 Ezequiel Martinez</p>
-    <p>
-        <a href="mailto:ezequieljemartinez@gmail.com" style="color:#fff;text-decoration:underline;">ezequieljemartinez@gmail.com</a>
-    </p>
-    <div class="social">
-        <a href="https://github.com/MartinezJesusEzequiel" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/ezequiel-martinez-a03088327/" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-    </div>
-</footer>
-
-    <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <a href="EZEQUIEL MARTINEZ.pdf" download class="btn-secundario">
+                <i class="fas fa-file-download"></i> Descargar CV
+            </a>
+            <p>© 2025 Ezequiel Martinez</p>
+            <div class="social">
+                <a href="https://github.com/MartinezJesusEzequiel" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ezequiel-martinez-a03088327/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
