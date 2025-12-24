@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Ezequiel Martinez</title>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><filter id=%22glow%22><feGaussianBlur stdDeviation=%222.5%22 result=%22coloredBlur%22/><feMerge><feMergeNode in=%22coloredBlur%22/><feMergeNode in=%22SourceGraphic%22/></feMerge></filter></defs><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2265%22 font-family=%22Arial, sans-serif%22 font-weight=%22bold%22 fill=%22%233b82f6%22 filter=%22url(%23glow)%22 style=%22text-shadow: 0 0 5px %233b82f6;%22>EM</text></svg>">
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
@@ -14,6 +17,7 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -21,7 +25,7 @@
         </div>
     </nav>
 
-    <header id="inicio" class="hero container">
+    <header id="inicio" class="hero container reveal">
         <img src="Imagen de WhatsApp 2025-04-16 a las 10.39.10_3ef6e64b.jpg" alt="Ezequiel Martinez" class="foto-perfil">
         <h1 class="titulo-principal">Hola, soy <span>Ezequiel Martinez</span></h1>
         <p class="subtitulo">Me apasiona crear software que resuelva problemas reales de forma simple y eficaz.</p>
@@ -29,7 +33,7 @@
     </header>
 
     <main class="container">
-        <section id="sobre-mi" class="section-card">
+        <section id="sobre-mi" class="section-card reveal">
             <h2 class="titulo-seccion">Sobre mí</h2>
             <p class="texto-seccion">
                 Soy una persona curiosa y creativa, siempre con ganas de aprender algo nuevo. Disfruto el proceso de pensar ideas y convertirlas en soluciones útiles para los demás.<br>
@@ -37,7 +41,35 @@
             </p>
         </section>
 
-        <section id="proyectos">
+        <section id="tecnologias" class="reveal">
+            <h2 class="titulo-seccion">Tecnologías</h2>
+            <div class="tech-category">
+                <h3>Lenguajes</h3>
+                <div class="grid-tech">
+                    <div class="tech-item"><i class="fab fa-python" style="color: #3776AB;"></i><span>Python</span></div>
+                    <div class="tech-item"><i class="fab fa-java" style="color: #007396;"></i><span>Java</span></div>
+                    <div class="tech-item"><i class="fab fa-js" style="color: #F7DF1E;"></i><span>JavaScript</span></div>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Bases de Datos</h3>
+                <div class="grid-tech">
+                    <div class="tech-item"><i class="fas fa-database" style="color: #CC2927;"></i><span>SQL Server</span></div>
+                    <div class="tech-item"><i class="fas fa-file-code" style="color: #003B57;"></i><span>SQLite</span></div>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Web & Herramientas</h3>
+                <div class="grid-tech">
+                    <div class="tech-item"><i class="fab fa-html5" style="color: #E34F26;"></i><span>HTML5</span></div>
+                    <div class="tech-item"><i class="fab fa-css3-alt" style="color: #1572B6;"></i><span>CSS3</span></div>
+                    <div class="tech-item"><i class="fab fa-git-alt" style="color: #F05032;"></i><span>Git</span></div>
+                    <div class="tech-item"><i class="fab fa-github" style="color: #ffffff;"></i><span>GitHub</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="reveal">
             <h2 class="titulo-seccion">Proyectos</h2>
             <div class="grid">
                 <div class="card proyecto">
@@ -51,7 +83,6 @@
                         <i class="fab fa-github"></i> GitHub
                     </a>
                 </div>
-
                 <div class="card proyecto">
                     <h3>Control de Insumos Agrícolas</h3>
                     <p>Arquitectura e implementación completa utilizando Flutter y Python (Flet).</p>
@@ -60,7 +91,6 @@
                         <i class="fab fa-python" style="color:#3b82f6;"></i>
                     </div>
                 </div>
-
                 <div class="card proyecto">
                     <h3>Sitio Web – Café Únilo</h3>
                     <p>Desarrollo responsive para marca de café con Firebase y diseño optimizado.</p>
@@ -72,7 +102,7 @@
             </div>
         </section>
 
-        <section id="educacion">
+        <section id="educacion" class="reveal">
             <h2 class="titulo-seccion">Educación y Certificados</h2>
             <div class="grid">
                 <div class="card">
@@ -85,12 +115,12 @@
                     <i class="fas fa-certificate icon-main" style="color: #f59e0b;"></i>
                     <h3>Desarrollo Web</h3>
                     <p>CEIT - Certificado Profesional</p>
-                    <a href="Certificado curso web.pdf" download class="btn-link">Descargar PDF</a>
+                    <a href="Certificado curso web.pdf" download class="btn-cv-fancy">Descargar PDF</a>
                 </div>
             </div>
         </section>
 
-        <section id="contacto">
+        <section id="contacto" class="reveal">
             <h2 class="titulo-seccion">Contacto</h2>
             <div class="card contact-form-container">
                 <form id="formulario" action="https://formspree.io/f/tu-codigo" method="POST">
@@ -105,7 +135,7 @@
 
     <footer>
         <div class="container">
-            <a href="EZEQUIEL MARTINEZ.pdf" download class="btn-secundario">
+            <a href="EZEQUIEL MARTINEZ.pdf" download class="btn-cv-fancy">
                 <i class="fas fa-file-download"></i> Descargar CV
             </a>
             <p>© 2025 Ezequiel Martinez</p>
@@ -115,5 +145,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
