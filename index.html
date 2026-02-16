@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
+    <header class="hero-impact">
+    <div class="impact-container">
+        <p class="impact-name">Ezequiel Martínez</p>
+        <h1 class="impact-title">portfolio</h1>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</header>
     <nav>
         <div class="container nav-flex">
             <div class="logo">EM</div>
@@ -84,13 +93,14 @@
                     </a>
                 </div>
                 <div class="card proyecto">
-                    <h3>Control de Insumos Agrícolas</h3>
-                    <p>Arquitectura e implementación completa utilizando Flutter y Python (Flet).</p>
-                    <div class="tech-icons">
-                        <i class="fab fa-flutter" style="color:#3b82f6;"></i>
-                        <i class="fab fa-python" style="color:#3b82f6;"></i>
-                    </div>
-                </div>
+    <h3>Control de Insumos Agrícolas</h3>
+    <p>Arquitectura e implementación completa utilizando Kotlin.</p>
+    <div class="tech-icons">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 30px; fill: #7F52FF;">
+            <path d="M24 24H0V0h24L12 12Z"/>
+        </svg>
+    </div>
+</div>
                 <div class="card proyecto">
                     <h3>Sitio Web – Café Únilo</h3>
                     <p>Desarrollo responsive para marca de café con Firebase y diseño optimizado.</p>
@@ -121,16 +131,27 @@
         </section>
 
         <section id="contacto" class="reveal">
-            <h2 class="titulo-seccion">Contacto</h2>
-            <div class="card contact-form-container">
-                <form id="formulario" action="https://formspree.io/f/tu-codigo" method="POST">
-                    <input type="text" name="nombre" placeholder="Tu nombre" required />
-                    <input type="email" name="email" placeholder="Tu correo" required />
-                    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-                    <button type="submit" class="btn-principal">Enviar mensaje</button>
-                </form>
-            </div>
-        </section>
+    <h2 class="titulo-seccion">Contacto</h2>
+    <div class="contact-info-grid">
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>ezequieljemartinez@gmail.com</p>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <h3>Teléfono</h3>
+            <p>+54 9 3496 509041</p>
+        </div>
+
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Ubicación</h3>
+            <p>Esperanza, Santa Fe</p>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer>
